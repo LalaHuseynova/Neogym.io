@@ -5,7 +5,19 @@
 .textag {
     color: white;
 }
-.textcenter{text-align: center;}
+
+.textcenter {
+    text-align: center;
+}
+
+.bg-purpledark {
+    background-color: #281847;
+}
+
+.bg-dark {
+    background-color: #140123;
+}
+
 
 header {
     position: relative;
@@ -34,7 +46,7 @@ nav li a {
     position: relative;
 }
 
-#home::after,
+#active::after,
 a:hover::after {
     content: '';
     position: absolute;
@@ -105,67 +117,80 @@ h4 {
 
 }
 
-.circle{
+.circle {
     padding: 40px 0px;
 }
-.circle i{
+
+.circle i {
     padding: 0px 5px;
 }
-.us{
+
+.us {
     background: url(../img/us-bg.jpg) center/cover;
-    min-height: 100vh;
+    min-height: 80vh;
 }
- h5{
+
+h5 {
     font: 32px "Poppins", sans-serif;
     font-weight: 700;
-     padding: 100px 0px 0px 0px;
-     text-transform: uppercase;
-    
+    padding: 100px 0px 0px 0px;
+    text-transform: uppercase;
+
 }
-hr{
-    border: none; 
-    height: 4px; 
+
+hr {
+    border: none;
+    height: 4px;
     background-color: #FF2953;
     width: 70px;
-   
+
 }
-#first{
-  
+
+#first {
+
     padding: 100px 0px 30px 0px;
 }
-article img{
+
+article img {
     padding: 20px 0px;
 }
-h6{
+
+h6 {
     padding: 10px 0px;
     font: 20px "Poppins", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 
 }
-article p{
+
+article p {
     font: 16px "Poppins", sans-serif;
-        padding: 10px 50px;
-    
+    padding: 10px 50px;
+
 }
-#last{
+
+#last {
     padding: 10px 50px 100px 50px;
 }
-.healthy{
+
+.healthy {
     background: url(../img/healthy-bg.jpg) center/cover;
-    min-height: 100vh;
+    min-height: 70vh;
 }
-.healthy h5{
-   
+
+.healthy h5 {
+
     padding: 100px 0px 50px 0px;
 }
-.healthy p{
-    
+
+.healthy p {
+
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     line-height: 30px;
     padding: 0px 50px 50px 50px;
 }
+
 .readmore {
     display: inline-block;
     border: 1px solid rgb(255, 255, 255);
@@ -174,33 +199,132 @@ article p{
     font-size: 1.2em;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-   
+    margin: 0px 0px 50px 0px;
+
 }
-.readmore:hover{
+
+.readmore:hover {
     color: black;
     background-color: white;
 }
-.trainers{
+
+.trainers {
     background: url(../img/trainer-bg.jpg) center/cover;
     min-height: 100vh;
 }
-.trainer h6{
+
+.trainer h6 {
     font-size: 20px;
     text-transform: capitalize;
-    padding: 0px;
+  
 }
+
 .trainer {
-    /* position: relative; */
-    text-align: center;
+    position: relative;
+
+
+}
+
+.menu {
+    position: absolute;
+    bottom: 9vh;
     
+  left: 50vw;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 80%;
+    max-width: 200px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.menu img {
+    padding: 10px 20px;
 }
 
 #trainerimg {
     width: 100%;
-    padding: 10px 0px 20px 0px;
+
+
+    padding: 0px 100px 0px 100px;
+    margin-bottom: 80px;
+
 }
 
 
+.picture img {
+    width: 100%;
+    border-radius: 20px
+}
+
+.contactus h5 {
+
+    padding: 20px 0px 0px 0px;
+
+
+}
+
+form {
+    padding: 30px 10px;
+
+}
+
+#name,
+#email,
+#tel {
+
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    margin: 20px 0px;
+
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 40px 0px;
+    margin: 20px 0px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    padding: 0px 10px;
+}
+
+#submit {
+    color: white;
+    background-color: #FF2953;
+    border: none;
+    padding: 10px 50px;
+    margin: 20px 0px;
+}
+
+.bg-dark a {
+    display: block;
+    padding: 20px 0px 50px 0px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+
+}
+
+.bg-dark i {
+    font-size: 32px;
+}
+
+.fa-location-dot {
+    padding-top: 80px;
+}
+
+.copyright {
+    font: 18px "Poppins", sans-serif;
+    padding: 20px;
+    color: #666565;
+}
 
 @media only screen and (min-width:768px) {
     nav {
@@ -223,8 +347,8 @@ article p{
     ul li {
         display: inline-block;
     }
-  
-   
+
+
     .ads {
 
         padding: 200px;
@@ -241,31 +365,128 @@ article p{
 
     h4 {
         font-size: 3em;
-       
+
     }
-  .container{
-    max-width: 1088px;
-    margin: auto;
-  }
-    .row::after{
+
+    .container {
+        max-width: 1088px;
+        margin: auto;
+    }
+
+    .us .row::after {
         content: ' ';
         display: table;
         clear: both;
     }
-    .row{
+
+    .us .row {
         padding: 50px 0px 0px 0px;
     }
-    #first{padding: 20px 0px;}
-    #last{padding: 10px 50px;}
-    article{
-      
-        float: left;
-        width:25%;
+
+    #first {
+        padding: 20px 0px;
     }
-    .trainer{
+
+    #last {
+        padding: 10px 50px;
+    }
+
+    article {
+
         float: left;
-        width:33.3%;
+        width: 25%;
+    }
+
+    .trainer {
+        float: left;
+        width: 33.3%;
+    }
+
+    .bg-purpledark .row {
+        display: flex;
+    }
+
+    form {
+        width: 40vw;
+        padding-left: 20px;
+
+    }
+
+    #submit {
+        float: right;
+    }
+
+    .contactus .h {
+        float: left;
+        padding-left: 20px;
+        padding-top: 100px;
+
+
+    }
+
+    .contactus hr {
+
+        float: left;
+        margin-bottom: 30px;
+    }
+
+
+
+    .trainer {
+
+
+        padding-top: 60px;
+
+    }
+    .trainer h6 {
+      padding-bottom: 20px;
+      
     }
     
+    #trainerimg {
+        width: 100%;
+    
+    
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 90px;
+    
+    }
 
+    .menu {
+     
+        bottom: 70px;
+        left: 50%;
+    }
+    .bg-dark .row {
+        display: flex;
+        justify-content: space-evenly;
+        /* Adjusted to space-evenly for equal spacing */
+        padding: 50px 0px;
+
+    }
+
+    .fa-location-dot {
+        padding-top: 0px;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    article {
+        float: left;
+        width: 50%;
+    }
+
+    .us p {
+
+        padding-bottom: 50px;
+
+    }
 }
